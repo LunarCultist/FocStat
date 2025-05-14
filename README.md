@@ -14,20 +14,18 @@ Supported features:
 - Select multiple image folders
 - View a histogram of used focal lengths
 - Multilingual interface: English, Deutsch, 日本語
-- Platform independent (Windows, Linux, macOS)
+- Platform independent (Windows, Linux)
 
 ---
 
 ## 🖥️ How to Run
 
 ### ✅ Windows Users
-1. Download the latest release from the [Releases](https://github.com/yourname/focstat/releases) page
-2. Unzip the file
-3. Double-click `Focstat.exe` to start
+1. Double-click `Focstat.exe` to start in "dist" directory. 
 
 > No installation required if using the EXE. If you want to run from source, see below.
 
-### ✅ Linux / macOS Users
+### ✅ Linux 
 1. Make sure `python3` is installed
 2. Install required dependencies:
 
