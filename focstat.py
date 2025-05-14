@@ -35,7 +35,9 @@ texts = {
         'about': 'About',
         'language': 'Language',
         'remove_selected': 'Remove Selected',
-        'clear_all': 'Clear All'
+        'clear_all': 'Clear All',
+        'x_label': 'focal length',
+        'y_label': 'amount of pictures'
     },
     'Deutsch': {
         'title': 'Brennweiten-Histogramm Generator',
@@ -49,7 +51,9 @@ texts = {
         'about': 'Über',
         'language': 'Sprache',
         'remove_selected': 'Auswahl entfernen',
-        'clear_all': 'Alle löschen'
+        'clear_all': 'Alle löschen',
+        'x_label': 'Brennweite',
+        'y_label': 'Anzahl Fotos'
     },
     '日本語': {
         'title': '焦点距離ヒストグラムジェネレータ',
@@ -63,7 +67,9 @@ texts = {
         'about': '情報',
         'language': '言語',
         'remove_selected': '選択を削除',
-        'clear_all': 'すべてクリア'
+        'clear_all': 'すべてクリア',
+        'x_label': '焦点距離',
+        'y_label': '写真枚数'
     }
 }
 
@@ -247,8 +253,8 @@ class FocalApp(QtWidgets.QWidget):
         plt.figure(figsize=(10, 5))
         plt.bar(xs, ys)
         plt.xticks(xs, rotation=90)
-        plt.xlabel(texts[self.current_lang]['language'])
-        plt.ylabel(texts[self.current_lang]['generate'])
+        plt.xlabel(texts[self.current_lang]['x_label'])
+        plt.ylabel(texts[self.current_lang]['y_label'])
         plt.title(texts[self.current_lang]['title'])
         plt.tight_layout()
         plt.show()
