@@ -1,4 +1,4 @@
-('/home/shoto/focstat/build/Focstat/PYZ-00.pyz',
+('/home/shoto/Documents/coding/focstat/build/Focstat/PYZ-00.pyz',
  [('PIL',
    '/home/shoto/mimi/lib/python3.12/site-packages/PIL/__init__.py',
    'PYMODULE'),
