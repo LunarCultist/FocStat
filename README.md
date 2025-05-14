@@ -9,7 +9,7 @@
 ## 📸 What is this?
 
 This is a graphical tool that helps photographers analyze which focal lengths they use most. It scans JPG files in selected folders and creates a histogram of focal lengths from the EXIF data.
-![Screenshot of the application](assets/sc1.png)
+<img src="assets/screenshot.png" width="50%">
 Supported features:
 - Select multiple image folders
 - View a histogram of used focal lengths
