@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Focal Histogram
+Exec=python3 /home/shoto/focstat/main.py
+Icon=/home/shoto/focstat/app_icon.png
+Type=Application
+Categories=Graphics;
+
