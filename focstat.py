@@ -96,7 +96,8 @@ def get_focal_length(filepath):
 class FocalApp(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowIcon(QtGui.QIcon("app_icon.png"))
+        self.icon_path = os.path.join(os.path.dirname(os.path.abspath(sys.argv[0])), "app_icon.png")
+        self.setWindowIcon(QtGui.QIcon(self.icon_path))
         self.current_lang = 'English'
         self.build_ui()
 
@@ -161,12 +162,12 @@ class FocalApp(QtWidgets.QWidget):
     def show_about(self):
         dlg = QDialog(self)
         dlg.setWindowTitle(texts[self.current_lang]['about'])
-        dlg.setWindowIcon(QtGui.QIcon("app_icon.png"))
+        dlg.setWindowIcon(QtGui.QIcon(self.icon_path))
         dlg.setFixedSize(400, 300)
 
         layout = QVBoxLayout(dlg)
         icon_label = QLabel()
-        icon_label.setPixmap(QtGui.QPixmap("app_icon.png").scaled(64, 64, Qt.KeepAspectRatio, Qt.SmoothTransformation))
+        icon_label.setPixmap(QtGui.QPixmap(self.icon_path).scaled(64, 64, Qt.KeepAspectRatio, Qt.SmoothTransformation))
         icon_label.setAlignment(Qt.AlignCenter)
 
         title_label = QLabel(f"<h2>{texts[self.current_lang]['title']}</h2>")
